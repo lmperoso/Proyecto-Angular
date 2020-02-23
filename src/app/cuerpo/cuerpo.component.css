@@ -1,0 +1,46 @@
+body{
+    background-color: darkred;
+    font-weight: bold  ;
+    color: blanchedalmond;
+    font-size: 2rem;
+}
+.card {
+    display: flex;
+    flex-flow: column nowrap;
+    margin:auto 0;
+    align-items: center;
+    width: 100%;
+    
+  }
+
+#carta{
+    display: flex;
+    text-align: center;
+    flex-flow: column nowrap;
+    margin:auto 0;
+    font-size: 2rem;
+
+}
+/* img{
+    width:50%;
+    height: 50%;
+} */
+
+#list{
+    width: 35%;
+    font-size: 4rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-left: 35%;
+  }
+#articulos{
+    font-size: 2rem;
+}
+label{
+    width: 60%;
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+.card-body{
+    font-size: 2rem;
+}

@@ -1,0 +1,14 @@
+body{
+    background-color:#ADD8E6;
+    font-weight: bold;
+    font-size: 2rem;
+    align-items: center;
+}
+
+img{
+    width: 90px;
+    height: 90px;
+}
+#tiempo{
+    align-items: center;
+}

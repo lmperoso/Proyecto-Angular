@@ -1,0 +1,43 @@
+<body>
+<p>El tiempo en: <input  type="text" [(ngModel)]="ciudad" (change)="datosTiempo()" id="lista"></p>
+
+<div class="row mt-5">
+  <!-- <div class="card " *ngFor="let l of listaTiempo"> -->
+  <div  class="mx-auto w-50" class="container-fluid" id="tiempo" class="col-sm-6">
+    <div class="card-heard" >
+      <hr>
+       <h1 style="text-align: center;">Ciudad: {{listaTiempo.name}}</h1><hr>
+    </div>
+    <div  style="text-align: center;" class="card-title">
+      <hr>
+      <h1  style="text-align: center;"> {{listaTiempo.main.temp}} ºC <img src="http://openweathermap.org/img/wn/{{listaTiempo.weather[0].icon}}.png"></h1>
+      <hr>
+    </div>
+    <div class="card-body">
+      <hr>
+      <p  style="text-align: center;">Cielo: {{listaTiempo.weather[0].main}}</p>
+      <p style="text-align: center;">Viento: {{listaTiempo.wind.speed}} km/h</p>
+      <hr>
+    </div>
+  </div>
+
+
+
+  <div  class="mx-auto w-50" class="container-fluid" id="tiempo" class="col-sm-6">
+    <div class="card-heard" >
+      <hr><h1 style="text-align: center;">Pais: {{listaTiempo.sys.country}}</h1><hr>
+    </div>
+    <div class="card-title">
+      <hr ><p style="text-align: center;">Temp min:  {{listaTiempo.main.temp_min}} ºC </p>
+      <p style="text-align: center;">Temp min:  {{listaTiempo.main.temp_max}} ºC </p><hr>
+      
+    </div>
+    <div class="card-body">
+      <hr> <p style="text-align: center;">Humedad: {{listaTiempo.main.humidity}} %</p><hr>
+      
+    </div>
+  </div>
+
+</div>
+
+</body>

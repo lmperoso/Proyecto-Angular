@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<body>
+  <div class="input-group mb-3" id="list">
+    <div class="input-group-prepend">
+      <label class="input-group-text" for="articulos">Selection of article:</label>
+    
+    <select class="custom-select" id="articulos" [(ngModel)]="categoria" (change)="dotosAjax()">
+      <option>general</option>
+      <option>business</option>
+      <option>entertainment</option>
+      <option selected>sports</option>
+      <option>technology</option>
+      <option>science</option>
+      <option>health</option>
+    </select>
+  </div>
+  </div>
+
+
+ 
+<div id="carta" *ngFor="let l of listaAjax" class="container-fluid">
+  <div class="card " class="mx-auto w-50">
+    <img class="card-img-top" [src]="l.urlToImage" >
+    <div class="card-body">
+      <h5 class="card-title">{{l.title}}</h5>
+      <p>{{l.author}}</p>
+    </div>
+  </div>
+</div><br><br>
+
+</body>
+
